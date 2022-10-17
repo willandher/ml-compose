@@ -1,0 +1,20 @@
+[submodule "ml-bff"]
+	path = ml-bff
+	url = https://github.com/willandher/ml-bff.git
+	branch = main
+[submodule "ml-user"]
+	path = ml-user
+	branch = main
+	url = https://github.com/willandher/ml-user.git
+[submodule "ml-ui"]
+	path = ml-ui
+	branch = main
+	url = https://github.com/willandher/ml-ui.git
+[submodule "ml-transaction"]
+	path = ml-transaction
+	branch = main
+	url = https://github.com/willandher/ml-transaction.git
+[submodule "ml-mock"]
+	path = ml-mock
+	branch = main
+	url = https://github.com/willandher/ml-mock.git

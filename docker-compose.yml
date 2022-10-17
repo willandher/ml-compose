@@ -1,0 +1,58 @@
+version: '3'
+
+services:
+  ml-mock:
+    image: ml-mock
+    container_name: ml-mock
+    build:
+      context: ./ml-mock
+      dockerfile: Dockerfile
+    ports:
+      - 3001:3000
+  ml-user:
+    image: ml-user
+    env_file:
+      - ./ml-user/.env
+    container_name: ml-user
+    build:
+      context: ./ml-user
+      dockerfile: Dockerfile
+    depends_on:
+      - ml-mock
+    ports:
+      - 3002:3000
+  ml-transaction:
+    image: ml-transaction
+    env_file:
+      - ./ml-transaction/.env
+    container_name: ml-transaction
+    build:
+      context: ./ml-transaction
+      dockerfile: Dockerfile
+    depends_on:
+      - ml-mock
+    ports:
+      - 3003:3000
+  ml-bff:
+    image: ml-bff
+    env_file:
+      - ./ml-bff/.env
+    container_name: ml-bff
+    build:
+      context: ./ml-bff
+      dockerfile: Dockerfile
+    depends_on:
+      - ml-user
+      - ml-transaction
+    ports:
+      - 9016:8080
+  ml-ui:
+    image: ml-ui
+    container_name: ml-ui
+    build:
+      context: ./ml-ui
+      dockerfile: Dockerfile
+    depends_on:
+      - ml-bff
+    ports:
+      - 9017:80
