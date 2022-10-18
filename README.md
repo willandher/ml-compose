@@ -114,9 +114,9 @@ Para descargar e inicializar el proyecto seguir las siguientes instrucciones.
   ```sh
   git submodule update
   ```
-* git submodule forech git checkout main
+* git submodule foreach git checkout main
   ```sh
-  git submodule forech git checkout main
+  git submodule foreach  git checkout main
   ```
 * Docker-compose run
   ```sh
