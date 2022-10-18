@@ -141,6 +141,7 @@ Por otro lado, quisiera dejar una lista de cosas que me hubiera gustado ver de o
 * Crear IDs de seguimientos de logs desde el front-end hasta el back-end para poder ver la trazabilidad de las peticiones. 
 * Organizar un poco mejor las carpetas en el front-end. 
 * Hacer tests en el Front-End. 
+* Tambien deje los .env en los proyectos, solo para efectos de prueba, se que es una mala practica. 
 
 
 
