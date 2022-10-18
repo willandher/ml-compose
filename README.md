@@ -102,6 +102,10 @@ Para descargar e inicializar el proyecto seguir las siguientes instrucciones.
   ```sh
   git clone https://github.com/willandher/ml-compose.git
   ```
+* Ingresar al  a la carpeta
+  ```sh
+  cd ml-compose
+  ```  
 * git submodule init
   ```sh
   git submodule init
