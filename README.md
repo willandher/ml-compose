@@ -122,7 +122,8 @@ Para descargar e inicializar el proyecto seguir las siguientes instrucciones.
   ```sh
   docker-compose build && docker-compose up
   ```
-* Para ver el proyecto ir a la siguiente url (Esperar que el docker termine)
+* Para ver el proyecto ir a la siguiente url (Esperar que el docker termine [finish])
+* 
   ```sh
   http://localhost:9017
   ```
@@ -162,6 +163,7 @@ Por favor considerar que estaré de vacaciones desde el 21 de octubre hasta el 4
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/willandher-goyo-65a551bb/
 [product-screenshot]: images/diagrama.png
+[finish]: images/finish.png
 [NestJs]: https://img.shields.io/badge/Nestjs-Nestjs-green
 [Quarkus]: https://img.shields.io/badge/Quarkus-Quarkus-yellow
 [quarkus-url]: https://quarkus.io/
